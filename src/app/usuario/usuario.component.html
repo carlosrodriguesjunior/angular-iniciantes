@@ -1,0 +1,8 @@
+Teste Async 2
+<div *ngIf="usuarios | async as u">
+<p *ngFor=" let usuario of u" >
+  Meu documento é {{usuario.documento}}
+</p>
+<input type="text" [value]="name" (input)="name=$event.target.value" (click)="name='will'">
+{{name}}
+</div>
